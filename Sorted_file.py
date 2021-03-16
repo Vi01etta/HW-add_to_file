@@ -4,7 +4,7 @@
 # In[6]:
 
 
-with open('1.txt', 'r') as a:
+with open('1.txt', 'r', encoding = 'utf-8') as a:
   text = a.read()
   a.seek(0)
   lines1 = a.readlines()
@@ -33,7 +33,7 @@ tuple3 = ('\n3.txt\n', str(size3), '\n', text)
 tuple_list = [tuple2, tuple1, tuple3]
 
 
-new_file = open ('4.txt', 'w')
+new_file = open ('4.txt', 'w', encoding = 'utf-8')
 
 
 for tuples in tuple_list:
@@ -42,22 +42,3 @@ for tuples in tuple_list:
     new_file.write(text_values)
     
 new_file.close()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
